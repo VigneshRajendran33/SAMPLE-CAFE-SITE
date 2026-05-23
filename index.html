@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew Haven | Premium Coffee Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">BREW <span>HAVEN</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="toggle-theme" id="theme-btn"><i class="fas fa-moon"></i></button>
+      <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <video autoplay loop muted playsinline class="hero-video">
+      <source src="videos/cafe-video.mp4" type="video/mp4">
+    </video>
+    
+    <div class="hero-content">
+      <h1>Experience Luxury In Every Sip</h1>
+      <p>A premium cozy space crafted for true coffee connoisseurs.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+        <a href="#reservation" class="btn btn-secondary">Book a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Our Story</h2>
+          <p>Founded with a passion for exceptional roasting and sophisticated atmospheres, Brew Haven offers an exquisite retreat from the daily grind. We source organic, fair-trade beans globally to craft perfection in every cup.</p>
+        </div>
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=600" alt="Cafe Ambiance">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Our Premium Menu</h2>
+      
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="coffee">Coffee</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-item coffee">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=400" alt="Espresso">
+          <div class="menu-info">
+            <h3>Gold Flake Espresso</h3>
+            <span class="price">$6.50</span>
+          </div>
+        </div>
+        <div class="menu-item coffee">
+          <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fc9f?q=80&w=400" alt="Latte Art">
+          <div class="menu-info">
+            <h3>Velvet Vanilla Latte</h3>
+            <span class="price">$7.00</span>
+          </div>
+        </div>
+        <div class="menu-item desserts">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=400" alt="Cake">
+          <div class="menu-info">
+            <h3>Dark Chocolate Fudge</h3>
+            <span class="price">$8.50</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservation" class="reservation">
+    <div class="container">
+      <h2>Reserve A Table</h2>
+      <form id="booking-form" class="res-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <input type="date" required>
+          <input type="time" required>
+        </div>
+        <div class="form-group">
+          <select required>
+            <option value="" disabled selected>Number of Guests</option>
+            <option value="1">1 Person</option>
+            <option value="2">2 People</option>
+            <option value="4">4 People</option>
+            <option value="5+">5+ People</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Visit Us</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Lane, Espresso Estate</p>
+          <p><i class="fas fa-phone"></i> +1 (555) 839-2492</p>
+          <p><i class="fas fa-clock"></i> Mon - Sun: 7:00 AM - 10:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Brew Haven. Built Beautifully.</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
